@@ -1,0 +1,13 @@
+[project]
+name = "gloomhaven-bot"
+version = "0.1.0"
+description = "A chatbot to assist when playing Gloomhaven: Jaws of the Lion"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "dotenv>=0.9.9",
+    "frontend>=0.0.3",
+    "numpy>=2.2.4",
+    "openai>=1.68.2",
+    "pymupdf>=1.25.4",
+]
