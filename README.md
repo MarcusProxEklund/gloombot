@@ -1,6 +1,6 @@
 ## Gloombot: Gloomhaven Jaws of the Lion Chatbot
 
-![Gloombot Banner](thesis/appendix/gloombotdiscord.gif)
+![](thesis/appendix/gloombotdiscord.gif)
 
 Gloombot is an intelligent Discord chatbot assistant for **Gloomhaven: Jaws of the Lion**. It leverages Retrieval-Augmented Generation (RAG) to provide instant, accurate rule clarifications and glossary lookups during gameplay, enhancing the tabletop experience for all players.
 
@@ -35,9 +35,11 @@ Gloombot is an intelligent Discord chatbot assistant for **Gloomhaven: Jaws of t
 ### Prerequisites
 - Python 3.10+
 - Discord bot token ([How to create a bot](https://discord.com/developers/applications))
+- OpenAI API key ([Get an API key](https://platform.openai.com/account/api-keys))
 - [uv](https://github.com/astral-sh/uv) or `pip`
 
 ### Installation
+
 
 1. **Clone the repository:**
     ```bash
@@ -51,9 +53,11 @@ Gloombot is an intelligent Discord chatbot assistant for **Gloomhaven: Jaws of t
     pip install -r requirements.txt
     ```
 3. **Set up your environment:**
-    - Create a `.env` file with your Discord bot token:
+    - Create a `.env` file with your Discord bot token and OpenAI API key:
       ```env
       DISCORD_BOT_TOKEN=your_token_here
+      OPENAI_API_KEY=your_openai_key_here
+      ```
       ```
 4. **Run the bot:**
     ```bash
