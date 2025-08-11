@@ -1,4 +1,6 @@
-## Gloombot: Gloomhaven Jaws of the Lion Chatbot
+# Gloombot
+
+## Gloomhaven: Jaws of the Lion Chatbot
 
 ![](thesis/appendix/gloombotdiscord.gif)
 
@@ -58,14 +60,14 @@ Gloombot is an intelligent Discord chatbot assistant for **Gloomhaven: Jaws of t
       DISCORD_BOT_TOKEN=your_token_here
       OPENAI_API_KEY=your_openai_key_here
       ```
-      ```
 4. **Run the bot:**
     ```bash
     uv python gloombot.py
     # or
     python gloombot.py
     ```
-	 ```
+5. **Invite the bot to your Discord server:**
+    - Use the OAuth2 URL generated in the Discord Developer Portal to invite Gloombot to your server.
 
 ---
 
