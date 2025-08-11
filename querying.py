@@ -27,13 +27,16 @@ def data_querying(input_text: str):
     
     results = collection.query(
         query_texts=[input_text],
-        n_results=5,
+        n_results=4,  # Number of results to retrieve
     )
+    # Flatten the list of lists into a single list
+    flat_results = [doc for sublist in results["documents"] for doc in sublist]
 
-    prompt = f"User query: {input_text}\n\nContext:\n{results}\n\nPlease provide a concise and relevant answer based on this information."
+    prompt = f"User query: {input_text}\n\nContext:\n{flat_results}\n\nPlease provide a concise and relevant answer based on this information."
     try:
         response = client.chat.completions.create(
             model="gpt-4",  # Use "gpt-4" if available
+            temperature=0,
             messages=[
                 {
                     "role": "system",

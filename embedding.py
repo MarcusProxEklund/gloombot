@@ -8,7 +8,7 @@ import os
 
 load_dotenv()
 
-# Initialize PersistentClient and load the collection
+# Initialize PersistentClient 
 client = PersistentClient(
     # Persistent storage path
     settings=Settings(anonymized_telemetry=False),
@@ -45,7 +45,8 @@ def create_collection(directory_path : str = r'data', collection_name: str = "pd
                     )
     print(f"loaded documents with {len(data)} pages")
 
-    collection = client.get_or_create_collection(collection_name)        
+    collection = client.get_or_create_collection(name=collection_name,
+                                                 configuration={"hnsw": {"space": "cosine"}})        
     # Load the SentenceTransformer model
     model = SentenceTransformer('all-MiniLM-L6-v2')
 
