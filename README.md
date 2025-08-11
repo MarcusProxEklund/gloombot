@@ -2,7 +2,7 @@
 
 ## Gloomhaven: Jaws of the Lion Chatbot
 
-![Gloombot in Discord](thesis/appendix/gloombotdiscord.gif)
+![](thesis/appendix/gloombotdiscord.gif)
 
 Gloombot is an intelligent Discord chatbot assistant for **Gloomhaven: Jaws of the Lion**. It leverages Retrieval-Augmented Generation (RAG) to provide instant, accurate rule clarifications and glossary lookups during gameplay, enhancing the tabletop experience for all players.
 
